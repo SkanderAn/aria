@@ -1,0 +1,20 @@
+[
+  {
+    "workspace_id": "3aca8c57",
+    "session_id": "test-session-1",
+    "question": "What is artificial intelligence?",
+    "answer": "According to Source 3 \u2014 Artificial intelligence - Wikipedia, page 1, Artificial Intelligence (AI) is the capability of computational systems to perform tasks typically associated with human intelligence, such as learning, reasoning, problem-solving, perception, and decision-making. It is a field of research in engineering, mathematics, and computer science that develops and studies methods and software that enable machines to perceive their environment and use learning and intelligence.",
+    "sources_count": 4,
+    "answered": true,
+    "timestamp": "2026-04-11T18:46:16.253586"
+  },
+  {
+    "workspace_id": "3aca8c57",
+    "session_id": "test-session-1",
+    "question": "Can you give me examples of companies working on it?",
+    "answer": "According to Source 1 \u2014 Artificial intelligence - Wikipedia, page 1, some Big Tech companies working on Artificial Intelligence include:\n\n1. Alphabet Inc.\n2. Amazon\n3. Apple Inc.\n4. Meta Platforms\n5. Microsoft\n\nThese companies already own a significant portion of the existing cloud infrastructure and computing power, allowing them to further develop and entrench themselves in the AI marketplace.",
+    "sources_count": 4,
+    "answered": true,
+    "timestamp": "2026-04-11T18:47:28.783723"
+  }
+]
