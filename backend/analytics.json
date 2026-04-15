@@ -16,5 +16,293 @@
     "sources_count": 4,
     "answered": true,
     "timestamp": "2026-04-11T18:47:28.783723"
+  },
+  {
+    "workspace_id": "64b78dfc",
+    "session_id": "x7my3gh4ul9",
+    "question": "Hello",
+    "answer": "I don't have any documents in my knowledge base yet. Please upload some documents first.",
+    "sources_count": 0,
+    "answered": true,
+    "timestamp": "2026-04-11T19:02:36.083439"
+  },
+  {
+    "workspace_id": "3aca8c57",
+    "session_id": "u9jtebc0fnf",
+    "question": "hello",
+    "answer": "Hello. How can I assist you today? Do you have any questions about artificial intelligence?",
+    "sources_count": 4,
+    "answered": true,
+    "timestamp": "2026-04-11T19:03:28.335111"
+  },
+  {
+    "workspace_id": "3aca8c57",
+    "session_id": "u9jtebc0fnf",
+    "question": "from where you taking the informations",
+    "answer": "I'm taking the information from the provided knowledge base context, which consists of 4 sources:\n\n1. Source 1 \u2014 Artificial intelligence - Wikipedia, page 1\n2. Source 2 \u2014 Artificial intelligence - Wikipedia, page 1\n3. Source 3 \u2014 Artificial intelligence - Wikipedia, page 1\n4. Source 4 \u2014 Artificial intelligence - Wikipedia, page 1\n\nThese sources include information from various authors, publications, and organizations, such as MIT Press, AI Magazine, Government Accountability Office, The New York Times, CNBC, and OECD, among others.",
+    "sources_count": 4,
+    "answered": true,
+    "timestamp": "2026-04-11T19:03:54.320713"
+  },
+  {
+    "workspace_id": "3aca8c57",
+    "session_id": "u9jtebc0fnf",
+    "question": "About what talking that page",
+    "answer": "The pages (Source 1, Source 2, Source 3, and Source 4) appear to be discussing the topic of Artificial Intelligence (AI). They seem to cover various aspects of AI, including:\n\n* Definitions and explanations of AI\n* Applications and uses of AI\n* Types of AI, such as machine learning and intelligent automation\n* Research and studies related to AI\n* Ethics and social implications of AI\n\nSpecifically, some of the topics mentioned on these pages include:\n\n* Consciousness and AI\n* Transformer architecture\n* Gender biases in digital technology\n* Intelligence amplification\n* Intelligent agents and automation\n* Large Language Models\n\nThese pages seem to be from the Wikipedia article on Artificial Intelligence. (As mentioned in the sources: Artificial intelligence - Wikipedia, page 1)",
+    "sources_count": 4,
+    "answered": true,
+    "timestamp": "2026-04-11T19:04:12.636010"
+  },
+  {
+    "workspace_id": "3aca8c57",
+    "session_id": "u9jtebc0fnf",
+    "question": "how can i learn ai",
+    "answer": "According to the provided knowledge base context, specifically from Source 1, AI researchers have used various techniques to reach their goals, including:\n\n* State space search\n* Mathematical optimization\n* Formal logic\n* Artificial neural networks\n* Methods based on statistics, operations research, and economics\n\nAdditionally, Source 3 mentions that machine learning is the study of programs that can improve their performance on a given task automatically, and it has been a part of AI from the beginning.\n\nTo learn AI, you may want to explore these topics and techniques. However, I don't have information about specific learning resources or courses in my knowledge base. Please contact our support team for further assistance on how to get started with learning AI.",
+    "sources_count": 4,
+    "answered": false,
+    "timestamp": "2026-04-11T19:04:23.938786"
+  },
+  {
+    "workspace_id": "64b78dfc",
+    "session_id": "o4gskjxtpl",
+    "question": "What is the Iphone 17 pro max price",
+    "answer": "I don't have information about that in my knowledge base. Please contact our support team for further assistance.",
+    "sources_count": 4,
+    "answered": false,
+    "timestamp": "2026-04-11T19:06:02.597558"
+  },
+  {
+    "workspace_id": "64b78dfc",
+    "session_id": "o4gskjxtpl",
+    "question": "what it sells",
+    "answer": "Based on the provided knowledge base context, Amazon.co.uk sells a wide range of products, including:\n\n* Electronics (Source 1, Source 2, Source 3)\n* Books (Source 1, Source 3)\n* Sports Equipment (Source 1, Source 3)\n* Home & Kitchen products (Source 1)\n* Fashion items (Source 1, Source 3)\n* Garden essentials (Source 1)\n* Furniture (Source 1)\n* Outdoor cooking equipment (Source 1)\n* Decor & Lighting (Source 1)\n* Toys & games (Source 3)\n* Video games & accessories (Source 3, Source 4)\n* Phones & accessories (Source 4)\n* Home entertainment products (Source 4)\n* Stationery from Japan (Source 4)\n* And more.\n\nPlease note that the specific products and prices may vary, and the provided context only gives a general idea of the types of products sold on Amazon.co.uk.",
+    "sources_count": 4,
+    "answered": true,
+    "timestamp": "2026-04-11T19:06:32.209073"
+  },
+  {
+    "workspace_id": "64b78dfc",
+    "session_id": "o4gskjxtpl",
+    "question": "so there is no phones !",
+    "answer": "According to the provided knowledge base context, phones are actually mentioned in the following sources:\n\n* Source 1: \"Phones & accessories\" and \"Mobiles\" are listed under the \"Explore now\" section.\n* Source 2: No specific mention of phones.\n* Source 3: No specific mention of phones.\n* Source 4: \"Phones & accessories\" is listed under the \"Popular categories\" section, and \"Mobiles\" is mentioned under the \"Explore now\" section in Source 1.\n\nSo, while the context does mention phones, it does not provide any specific information about the iPhone 17 Pro Max or its price.",
+    "sources_count": 4,
+    "answered": true,
+    "timestamp": "2026-04-11T19:06:42.622629"
+  },
+  {
+    "workspace_id": "64b78dfc",
+    "session_id": "o4gskjxtpl",
+    "question": "do can you find me the iphone 17 price",
+    "answer": "I don't have information about that in my knowledge base. The provided context does not mention the iPhone 17 or its price. Please contact our support team for further assistance.",
+    "sources_count": 4,
+    "answered": false,
+    "timestamp": "2026-04-11T19:06:54.734571"
+  },
+  {
+    "workspace_id": "64b78dfc",
+    "session_id": "o4gskjxtpl",
+    "question": "appele Iphone 17",
+    "answer": "I don't have information about the Apple iPhone 17 in my knowledge base. The provided context does not mention the iPhone 17 or its price. Please contact our support team for further assistance.",
+    "sources_count": 4,
+    "answered": false,
+    "timestamp": "2026-04-11T19:07:25.910251"
+  },
+  {
+    "workspace_id": "3f48f96b",
+    "session_id": "s7wa4u98p9",
+    "question": "what is CA",
+    "answer": "I don't have information about \"CA\" in my knowledge base. Please contact our support team for further assistance.",
+    "sources_count": 4,
+    "answered": false,
+    "timestamp": "2026-04-11T19:08:24.392106"
+  },
+  {
+    "workspace_id": "3f48f96b",
+    "session_id": "s7wa4u98p9",
+    "question": "and now !",
+    "answer": "Based on the provided knowledge base context, I can infer that \"CA\" might refer to \"Club Africain\", as it is mentioned in multiple sources. However, without more context, I cannot provide a definitive answer. If you're looking for information about Club Africain, I can try to help with that.",
+    "sources_count": 4,
+    "answered": true,
+    "timestamp": "2026-04-11T19:08:51.839487"
+  },
+  {
+    "workspace_id": "3f48f96b",
+    "session_id": "s7wa4u98p9",
+    "question": "ok go with it",
+    "answer": "Based on the provided knowledge base context, \"CA\" likely refers to \"Club Africain\", a sports club. The context mentions various news and updates about the club, including match schedules, results, and other events. (Source 1 \u2014 Club Africain | Site officiel, page 1)",
+    "sources_count": 4,
+    "answered": true,
+    "timestamp": "2026-04-11T19:09:06.362883"
+  },
+  {
+    "workspace_id": "3f48f96b",
+    "session_id": "s7wa4u98p9",
+    "question": "the last result !",
+    "answer": "The last result mentioned in the knowledge base context is a handball match: Hand | 8\u00e8me J. Play-off Elite Hommes : Club Africain - ES Sahel 28-29. This means that Club Africain lost to ES Sahel with a score of 28-29. (Source 3 \u2014 Club Africain | Site officiel, page 1)",
+    "sources_count": 4,
+    "answered": true,
+    "timestamp": "2026-04-11T19:09:20.462190"
+  },
+  {
+    "workspace_id": "3f48f96b",
+    "session_id": "s7wa4u98p9",
+    "question": "what about the footbal",
+    "answer": "The last football result mentioned in the knowledge base context is: Ligue 1 - 25\u00e8me J. : US Monastirienne - Club Africain 0-0. This means that the match between US Monastirienne and Club Africain ended in a 0-0 draw. (Source 2 \u2014 Club Africain | Site officiel, page 1)",
+    "sources_count": 4,
+    "answered": true,
+    "timestamp": "2026-04-11T19:09:36.508902"
+  },
+  {
+    "workspace_id": "3f48f96b",
+    "session_id": "s7wa4u98p9",
+    "question": "and what classement is in legeue !",
+    "answer": "I don't have information about the current league standings or classification of Club Africain in my knowledge base. The provided context only mentions specific match results and schedules, but not the overall league standings. (No specific source)",
+    "sources_count": 4,
+    "answered": false,
+    "timestamp": "2026-04-11T19:09:52.811711"
+  },
+  {
+    "workspace_id": "3f48f96b",
+    "session_id": "s7wa4u98p9",
+    "question": "and now do you have informations !",
+    "answer": "I don't have information about that in my knowledge base. Please contact our support team for further assistance.",
+    "sources_count": 4,
+    "answered": false,
+    "timestamp": "2026-04-11T19:10:42.431544"
+  },
+  {
+    "workspace_id": "3f48f96b",
+    "session_id": "s7wa4u98p9",
+    "question": "what is ca so !",
+    "answer": "According to the knowledge base context, \"CA\" refers to \"Club Africain\", a football club. The context provides information about the club's history, logo, sponsors, and other related details. (Source 1 \u2014 Club africain (football) \u2014 Wikip\u00e9dia, page 1)",
+    "sources_count": 4,
+    "answered": true,
+    "timestamp": "2026-04-11T19:10:51.505630"
+  },
+  {
+    "workspace_id": "3f48f96b",
+    "session_id": "s7wa4u98p9",
+    "question": "who is the club coach",
+    "answer": "According to the knowledge base context, the coach of Club Africain is Faouzi Benzarti. (Source 3 \u2014 Club africain (football) \u2014 Wikip\u00e9dia, page 1)",
+    "sources_count": 4,
+    "answered": true,
+    "timestamp": "2026-04-11T19:11:02.301232"
+  },
+  {
+    "workspace_id": "3f48f96b",
+    "session_id": "s7wa4u98p9",
+    "question": "who is the club prisedent",
+    "answer": "According to the knowledge base context, the president of Club Africain is Abdessalem Younsi. (Source 4 \u2014 Club africain (football) \u2014 Wikip\u00e9dia, page 1)",
+    "sources_count": 4,
+    "answered": true,
+    "timestamp": "2026-04-11T19:11:15.395928"
+  },
+  {
+    "workspace_id": "3f48f96b",
+    "session_id": "s7wa4u98p9",
+    "question": "the last date of update !",
+    "answer": "The last date of update mentioned in the knowledge base context is 3 avr 2026 (April 3, 2026) from Source 1 \u2014 Club Africain | Site officiel, page 1, and also 4 mars 2026 (March 4, 2026) from Source 3 \u2014 Club africain (football) \u2014 Wikip\u00e9dia, page 1, and Source 4 \u2014 Club africain (football) \u2014 Wikip\u00e9dia, page 1.",
+    "sources_count": 4,
+    "answered": true,
+    "timestamp": "2026-04-11T19:11:25.586890"
+  },
+  {
+    "workspace_id": "3f48f96b",
+    "session_id": "s7wa4u98p9",
+    "question": "so from souce club africain site can you know the president name",
+    "answer": "No, I don't have information about the president's name from the Club Africain site. However, according to the knowledge base context from other sources, the president of Club Africain is mentioned as Jamel Atrous (Source 1 \u2014 Club africain (football) \u2014 Wikip\u00e9dia, page 1) and also Ch\u00e9rif Bellamine is mentioned as the president (Source 1 \u2014 Club africain (football) \u2014 Wikip\u00e9dia, page 1).",
+    "sources_count": 4,
+    "answered": false,
+    "timestamp": "2026-04-11T19:11:50.885096"
+  },
+  {
+    "workspace_id": "3f48f96b",
+    "session_id": "s7wa4u98p9",
+    "question": "can yo give more informations about them",
+    "answer": "I don't have information about that in my knowledge base. Please contact our support team for further assistance. The knowledge base context only provides a list of names of players and presidents, but does not include detailed information about them.",
+    "sources_count": 4,
+    "answered": false,
+    "timestamp": "2026-04-11T19:12:13.290257"
+  },
+  {
+    "workspace_id": "e48147d0",
+    "session_id": "tt6d7uo5dy",
+    "question": "Hello",
+    "answer": "Hello. How can I assist you today? Do you have any questions about Apple products or services?",
+    "sources_count": 4,
+    "answered": true,
+    "timestamp": "2026-04-11T19:14:30.098461"
+  },
+  {
+    "workspace_id": "e48147d0",
+    "session_id": "tt6d7uo5dy",
+    "question": "Can you tell me about the latest apple phones !",
+    "answer": "According to my knowledge base (Source 1 \u2014 Apple, page 1), the latest iPhone lineup is available. You can \"Meet the latest iPhone lineup\" and \"Learn more\" or \"Shop iPhone\" to find out more about the latest models. However, I don't have specific details about the models in my knowledge base. If you're looking for more information, I recommend visiting the Apple website or contacting our support team for further assistance.",
+    "sources_count": 4,
+    "answered": true,
+    "timestamp": "2026-04-11T19:14:49.822342"
+  },
+  {
+    "workspace_id": "e48147d0",
+    "session_id": "tt6d7uo5dy",
+    "question": "iphone 17 !",
+    "answer": "I don't have information about the iPhone 17 in my knowledge base. The latest information I have is about the iPhone lineup in general (Source 1 \u2014 Apple, page 1), but it doesn't mention a specific model like iPhone 17. If you're looking for information about a specific model, I recommend visiting the Apple website or contacting our support team for further assistance.",
+    "sources_count": 4,
+    "answered": false,
+    "timestamp": "2026-04-11T19:15:02.609726"
+  },
+  {
+    "workspace_id": "e48147d0",
+    "session_id": "tt6d7uo5dy",
+    "question": "so what do you know !",
+    "answer": "I can tell you about some of the Apple products and services mentioned in my knowledge base. For example, I know that you can:\n\n* Stream F1 Grand Prix live and on demand on Apple TV (Source 1 \u2014 Apple, page 1 and Source 3 \u2014 Apple, page 1)\n* Watch various TV shows and movies, including dramas, thrillers, and comedies (Source 1 \u2014 Apple, page 1)\n* Listen to music, including A-List Pop and New Music Daily (Source 2 \u2014 Apple, page 1)\n* Play games, such as PowerWash Simulator and SpongeBob: Patty Pursuit 2 (Source 2 \u2014 Apple, page 1)\n* Get up to $195\u2013$685 in credit when you trade in an iPhone 13 or higher (Source 3 \u2014 Apple, page 1)\n* Learn about the latest MacBook, iPad Air, and Apple Watch models (Source 4 \u2014 Apple, page 1)\n\nI can also provide information about Apple events, such as the Apple Worldwide Developers Conference (WWDC 26) (Source 4 \u2014 Apple, page 1).\n\nIf you have any specific questions about these topics, I'll do my best to help.",
+    "sources_count": 4,
+    "answered": true,
+    "timestamp": "2026-04-11T19:15:17.756472"
+  },
+  {
+    "workspace_id": "e48147d0",
+    "session_id": "tt6d7uo5dy",
+    "question": "what is the last iphone released",
+    "answer": "According to my knowledge base (Source 2 \u2014 iPhone - Apple, page 1), some of the latest iPhone models mentioned are iPhone 17 Pro and iPhone Air. However, I don't have information about the exact release dates or the most recent iPhone model released. If you're looking for the latest information, I recommend visiting the Apple website or contacting our support team for further assistance.",
+    "sources_count": 4,
+    "answered": false,
+    "timestamp": "2026-04-11T19:16:34.971297"
+  },
+  {
+    "workspace_id": "e48147d0",
+    "session_id": "tt6d7uo5dy",
+    "question": "how can i buy one",
+    "answer": "According to my knowledge base, you can buy an iPhone through the Apple Store app (Source 3 \u2014 iPhone - Apple, page 1 and Source 4 \u2014 iPhone - Apple, page 1). You can:\n\n* Download the Apple Store app and shop for iPhones\n* Get personalized product recommendations and compare models\n* Access Your Saves and track your orders\n* Opt-in to get updates on new products, promotions, and store events\n\nAdditionally, you can also trade in your eligible device for credit when you buy a new iPhone (Source 3 \u2014 iPhone - Apple, page 1). You can choose to pay over time, interest-free, with Apple Card Monthly Installments (Source 3 \u2014 iPhone - Apple, page 1).\n\nYou can also visit the Apple website or check out the Apple Store online (Source 2 \u2014 Apple Store Online - Apple, page 1) for more information on buying an iPhone. They offer free delivery or easy pickup options.",
+    "sources_count": 4,
+    "answered": true,
+    "timestamp": "2026-04-11T19:16:52.519839"
+  },
+  {
+    "workspace_id": "e48147d0",
+    "session_id": "tt6d7uo5dy",
+    "question": "how long is the garantie",
+    "answer": "I don't have information about the warranty or guarantee period for Apple products in my knowledge base. The documents I have access to (Source 1 \u2014 Apple Watch - Apple, page 1, Source 2 \u2014 iPhone - Apple, page 1, Source 3 \u2014 iPhone - Apple, page 1, and Source 4 \u2014 iPhone - Apple, page 1) do not mention warranty or guarantee details. For accurate and up-to-date information, I recommend visiting the Apple website or contacting our support team for further assistance.",
+    "sources_count": 4,
+    "answered": false,
+    "timestamp": "2026-04-11T19:17:06.031895"
+  },
+  {
+    "workspace_id": "3f48f96b",
+    "session_id": "4r47c3l453a",
+    "question": "CA",
+    "answer": "Le Club Africain (CA) est un club de football. Selon les informations disponibles, notamment sur le site officiel (Source 2 \u2014 Club Africain | Site officiel, page 1) et sur Wikip\u00e9dia (Source 1 \u2014 Club africain (football) \u2014 Wikip\u00e9dia, page 1 et Source 3 \u2014 Club africain (football) \u2014 Wikip\u00e9dia, page 1), le club a eu diff\u00e9rents entra\u00eeneurs et sponsors au fil des ans. \n\nPar exemple, en 2011, Faouzi Benzarti est devenu le nouveau coach du CA, comme indiqu\u00e9 sur GlobalNet (Source 1). Le club a \u00e9galement des partenariats avec des \u00e9quipementiers et des sponsors, tels que Diadora, Coca-Cola, Samsung, et d'autres (Source 3).\n\nSi vous cherchez des informations sp\u00e9cifiques sur le Club Africain, veuillez me poser une question plus pr\u00e9cise pour que je puisse vous aider au mieux.",
+    "sources_count": 4,
+    "answered": true,
+    "timestamp": "2026-04-13T00:25:00.745961"
+  },
+  {
+    "workspace_id": "3f48f96b",
+    "session_id": "4r47c3l453a",
+    "question": "Hamadi bousbia",
+    "answer": "Hamadi Bousbia\u00e2 a \u00e9t\u00e9 l'entra\u00eeneur du Club Africain \u00e0 deux reprises. Selon les informations disponibles (Source 1 \u2014 Club africain (football) \u2014 Wikip\u00e9dia, page 1), il a occup\u00e9 ce poste :\n\n- De 1987 \u00e0 1988\n- De 1992 \u00e0 1993\n\nSi vous avez besoin d'informations suppl\u00e9mentaires, veuillez me poser une question plus pr\u00e9cise.",
+    "sources_count": 4,
+    "answered": true,
+    "timestamp": "2026-04-13T00:25:55.754807"
   }
 ]
