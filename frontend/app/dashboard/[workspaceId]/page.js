@@ -212,8 +212,8 @@ export default function WorkspacePage() {
                     <span key={h} style={{ fontFamily: "'DM Mono',monospace", fontSize: "10px", color: "#334155", textTransform: "uppercase", letterSpacing: "0.1em" }}>{h}</span>
                   ))}
                 </div>
-                {documents.map(doc => (
-                  <div key={doc.doc_id} className="doc-row"
+                {documents.map((doc, docIndex) => (
+                  <div key={`doc-${doc.doc_id}-${docIndex}`} className="doc-row"
                     style={{ padding: "14px 20px", borderBottom: "1px solid #0a0a14", display: "grid", gridTemplateColumns: "1fr 100px 80px 40px", gap: "12px", alignItems: "center", transition: "background 0.2s" }}>
                     <span style={{ fontSize: "13px", color: "#94a3b8", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{doc.filename}</span>
                     <span style={{ fontFamily: "'DM Mono',monospace", fontSize: "11px", padding: "3px 8px", borderRadius: "4px", background: doc.source_type === "pdf" ? workspace.primary_color + "15" : "#0ea57215", color: doc.source_type === "pdf" ? workspace.primary_color : "#0ea572", width: "fit-content" }}>{doc.source_type}</span>

@@ -304,5 +304,59 @@
     "sources_count": 4,
     "answered": true,
     "timestamp": "2026-04-13T00:25:55.754807"
+  },
+  {
+    "workspace_id": "3aca8c57",
+    "session_id": "08qqrtx5hhgu",
+    "question": "Hello",
+    "answer": "Hello. How can I assist you today? Do you have any questions about Tunisia based on the provided knowledge base context?",
+    "sources_count": 4,
+    "answered": true,
+    "timestamp": "2026-04-20T00:22:28.123977"
+  },
+  {
+    "workspace_id": "3aca8c57",
+    "session_id": "08qqrtx5hhgu",
+    "question": "tunisia ?",
+    "answer": "Tunisia. According to the knowledge base context from Source 1, 2, and 3 \u2014 Tunisie \u2014 Wikip\u00e9dia, page 1, Tunisia has a Constitution of 2014, which can be found on constituteproject.org. Additionally, there is information available about international religious freedom in Tunisia from the 2022 Report on International Religious Freedom: Tunisia, published by the D\u00e9partement d'\u00c9tat des \u00c9tats-Unis. Would you like to know more about a specific aspect of Tunisia?",
+    "sources_count": 4,
+    "answered": true,
+    "timestamp": "2026-04-20T00:22:52.431322"
+  },
+  {
+    "workspace_id": "4807c5cf",
+    "session_id": "9hyge7an52p",
+    "question": "what is that pdf talking about",
+    "answer": "The PDF, specifically \"AndolsiResume.pdf\", appears to be a resume or curriculum vitae of Skander Andolsi, an Artificial Intelligence and Robotics Engineer. It outlines his education, experience, skills, and projects, including his work on AI-powered CV analysis and industrial modernization. (Source: AndolsiResume.pdf, pages 1)",
+    "sources_count": 4,
+    "answered": true,
+    "timestamp": "2026-04-20T00:43:19.497009"
+  },
+  {
+    "workspace_id": "4807c5cf",
+    "session_id": "9hyge7an52p",
+    "question": "so can you talk about skander andolsi !",
+    "answer": "Skander Andolsi is an Artificial Intelligence and Robotics Engineer. According to his resume, he has a Master's degree in Advanced Robotics and Artificial Intelligence. He is skilled in Machine Learning, Computer Vision, and Natural Language Processing, with experience in building and deploying AI models.\n\nSome of his key skills and experiences include:\n\n* Machine Learning with Large Language Models (LLaMA, Mistral, LangChain)\n* Computer Vision (YOLO, OpenCV)\n* Natural Language Processing\n* Building and deploying AI-powered solutions\n* Experience with Docker for scalability\n\nHe has also worked on various projects, including:\n\n* CV analysis using Llama 3 70B via Ollama and LangChain\n* Global Temperature Analysis with Simple Regression\n* Car Price Prediction using Decision Trees\n* Tip Calculator with Fuzzy Logic\n\nSkander Andolsi is also proficient in multiple languages, including English and French, and has achieved 100% accuracy in three machine learning projects. (Source: AndolsiResume.pdf, pages 1)",
+    "sources_count": 4,
+    "answered": true,
+    "timestamp": "2026-04-20T00:43:37.336197"
+  },
+  {
+    "workspace_id": "4807c5cf",
+    "session_id": "9hyge7an52p",
+    "question": "what is his last project he do !",
+    "answer": "According to the provided information, Skander Andolsi's last mentioned project was a \"Final-Year Project - CV Analysis\" where he designed and developed a custom-built AI-powered solution for CV analysis using Llama 3 70B via Ollama and LangChain. This project was done during his internship at Think Tank Business Solutions from February 2024 to November 2024. (Source: AndolsiResume.pdf, page 1)",
+    "sources_count": 4,
+    "answered": true,
+    "timestamp": "2026-04-20T00:44:44.088593"
+  },
+  {
+    "workspace_id": "4807c5cf",
+    "session_id": "9hyge7an52p",
+    "question": "in github !",
+    "answer": "According to the provided information, one of Skander Andolsi's projects is \"QueryMind \u2014 AI Data Analyst\", which is listed as a live project. However, I don't have information about his latest project on GitHub. The provided information only mentions that he has a GitHub account, but it doesn't specify his latest project on the platform. (Source: Skander Andolsi \u2014 AI & Robotics Engineer, page 1)",
+    "sources_count": 4,
+    "answered": false,
+    "timestamp": "2026-04-20T00:44:53.647695"
   }
 ]
