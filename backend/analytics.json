@@ -358,5 +358,185 @@
     "sources_count": 4,
     "answered": false,
     "timestamp": "2026-04-20T00:44:53.647695"
+  },
+  {
+    "workspace_id": "e7344997",
+    "session_id": "jgwy7nw52kl",
+    "question": "Hello",
+    "answer": "Bonjour, welcome to EY France. How can I assist you today? You can ask me about our services, careers, or any other topic related to EY. I'll do my best to provide you with helpful information based on our knowledge base.",
+    "sources_count": 4,
+    "answered": true,
+    "timestamp": "2026-04-22T00:50:47.715700"
+  },
+  {
+    "workspace_id": "e7344997",
+    "session_id": "jgwy7nw52kl",
+    "question": "What kind of is EY !",
+    "answer": "EY (Ernst & Young) is a global organization of member firms, each of which is a separate legal entity. According to our knowledge base (Source 4 \u2014 Services | EY - France, page 1), EY provides various services, but the specific details of these services are not fully outlined in the provided context. However, it is mentioned that EY's objective is to \"Construire un monde du travail meilleur\" (Build a better working world), as stated in (Source 2 \u2014 Carri\u00e8res chez EY | EY - France, page 1). For more information on the services provided by EY, you may want to explore the \"Services\" section, but I don't have that information in my knowledge base.",
+    "sources_count": 4,
+    "answered": true,
+    "timestamp": "2026-04-22T00:51:08.263131"
+  },
+  {
+    "workspace_id": "ca098237",
+    "session_id": "9d0uitqyxtm",
+    "question": "Hello TT",
+    "answer": "Hello. Welcome to think tank Business Solutions. How can I assist you today?",
+    "sources_count": 4,
+    "answered": true,
+    "timestamp": "2026-04-23T02:06:48.590395"
+  },
+  {
+    "workspace_id": "ca098237",
+    "session_id": "9d0uitqyxtm",
+    "question": "Can you tell me a litlle bet about TT",
+    "answer": "Think tank Business Solutions is a company that helps organizations shape their digital future. According to our website (Source 1 \u2014 think tank Business Solutions | Fa\u00e7onnez votre avenir num\u00e9rique, page 1), we have launched a solution called Elix, which is a modular, all-in-one suite for enterprise and project management based on AI, designed for both private and public sectors. We also provide support and guidance to our clients, as testified by our clients such as Wolfram Gast and Jens Bald (Source 2 \u2014 think tank Business Solutions | Fa\u00e7onnez votre avenir num\u00e9rique, page 1). Our goal is to help organizations unlock their digital potential, with a focus on being human, secure, and digital (Source 4 \u2014 think tank Business Solutions | Fa\u00e7onnez votre avenir num\u00e9rique, page 1). Would you like to know more about a specific aspect of our services?",
+    "sources_count": 4,
+    "answered": true,
+    "timestamp": "2026-04-23T02:07:01.458277"
+  },
+  {
+    "workspace_id": "ca098237",
+    "session_id": "2tm7sm4hyp4",
+    "question": "Hello TT",
+    "answer": "Hello, welcome to think tank Business Solutions. How can I assist you today?",
+    "sources_count": 4,
+    "answered": true,
+    "timestamp": "2026-04-23T02:10:09.923518"
+  },
+  {
+    "workspace_id": "ca098237",
+    "session_id": "ot6hk5r3d8n",
+    "question": "test",
+    "answer": "Bonjour, comment puis-je vous aider aujourd'hui ?",
+    "sources_count": 4,
+    "answered": true,
+    "timestamp": "2026-04-23T02:11:14.518812"
+  },
+  {
+    "workspace_id": "ca098237",
+    "session_id": "wyw1nypks5",
+    "question": "test",
+    "answer": "Bonjour, comment puis-je vous aider aujourd'hui ?",
+    "sources_count": 4,
+    "answered": true,
+    "timestamp": "2026-04-23T02:13:13.967945"
+  },
+  {
+    "workspace_id": "ca098237",
+    "session_id": "zo9sph2f7vi",
+    "question": "Hello",
+    "answer": "Hello. How can I assist you today?",
+    "sources_count": 1,
+    "answered": true,
+    "timestamp": "2026-04-23T02:17:19.388205"
+  },
+  {
+    "workspace_id": "ca098237",
+    "session_id": "zo9sph2f7vi",
+    "question": "what !",
+    "answer": "It seems like you might be looking for information on \"think tank\". Think tank is a company that helps with digital transformation and business solutions, but I'd be happy to try and help you with more specific information if you have any questions.",
+    "sources_count": 1,
+    "answered": true,
+    "timestamp": "2026-04-23T02:17:32.293590"
+  },
+  {
+    "workspace_id": "ca098237",
+    "session_id": "zo9sph2f7vi",
+    "question": "why you bugged !",
+    "answer": "I apologize if my previous responses seemed unhelpful. I'm here to assist you to the best of my abilities, but I can only provide information based on what I have available. If I don't have the information you're looking for, I'll do my best to let you know and point you in the right direction.",
+    "sources_count": 1,
+    "answered": true,
+    "timestamp": "2026-04-23T02:17:42.458734"
+  },
+  {
+    "workspace_id": "ca098237",
+    "session_id": "zo9sph2f7vi",
+    "question": "what is TT",
+    "answer": "I believe you might be referring to \"think tank\", which is a company that provides business solutions and helps with digital transformation. They seem to have expertise in areas like Low-Code platforms, cloud strategies, and IT development.",
+    "sources_count": 1,
+    "answered": true,
+    "timestamp": "2026-04-23T02:17:48.111110"
+  },
+  {
+    "workspace_id": "ca098237",
+    "session_id": "1zom761n4ae",
+    "question": "what is TT",
+    "answer": "TT appears to refer to \"think tank\", which is a company that provides digital transformation solutions and services, including IT operations, technical expertise, and innovation. They seem to help organizations, such as the Tunisian public administration, in their digital transformation journey.",
+    "sources_count": 4,
+    "answered": true,
+    "timestamp": "2026-04-23T22:42:14.815255"
+  },
+  {
+    "workspace_id": "ca098237",
+    "session_id": "1zom761n4ae",
+    "question": "do you know EY",
+    "answer": "I don't have that information right now. However, I can tell you that think tank has launched a solution called Elix, which is a modular, all-in-one enterprise and project management solution based on AI, designed for both private and public sectors.",
+    "sources_count": 4,
+    "answered": true,
+    "timestamp": "2026-04-23T22:42:27.480542"
+  },
+  {
+    "workspace_id": "ca098237",
+    "session_id": "19071l507v2",
+    "question": "what is tt",
+    "answer": "I don't have that information right now. Please contact our team directly for more details.",
+    "sources_count": 4,
+    "answered": true,
+    "timestamp": "2026-04-23T22:51:28.454008"
+  },
+  {
+    "workspace_id": "ca098237",
+    "session_id": "6ycvvyajv9t",
+    "question": "hello",
+    "answer": "Hello, welcome to our support. How can I assist you today?",
+    "sources_count": 4,
+    "answered": true,
+    "timestamp": "2026-04-23T22:51:45.402000"
+  },
+  {
+    "workspace_id": "ca098237",
+    "session_id": "shuhyz8d57",
+    "question": "hello tt",
+    "answer": "Hello, how can I assist you today?",
+    "sources_count": 4,
+    "answered": true,
+    "timestamp": "2026-04-23T22:56:23.281322"
+  },
+  {
+    "workspace_id": "ca098237",
+    "session_id": "592lnm6eu0g",
+    "question": "Hello tt",
+    "answer": "Hello, how can I assist you today?",
+    "sources_count": 4,
+    "answered": true,
+    "timestamp": "2026-04-23T22:57:45.211445"
+  },
+  {
+    "workspace_id": "ca098237",
+    "session_id": "592lnm6eu0g",
+    "question": "can you talk about yourself",
+    "answer": "I'm Aria, a friendly and professional customer support assistant. I'm here to help answer your questions and provide assistance to the best of my abilities. I don't have personal experiences, but I can provide information and support on various topics. How can I help you today?",
+    "sources_count": 4,
+    "answered": true,
+    "timestamp": "2026-04-23T22:57:54.076010"
+  },
+  {
+    "workspace_id": "ca098237",
+    "session_id": "592lnm6eu0g",
+    "question": "what is tt so !",
+    "answer": "I think you meant \"think tank\". Think tank is a company that provides business solutions, helping organizations shape their digital future. They offer expertise in areas such as digital transformation, IT operations, and project management, among others.",
+    "sources_count": 4,
+    "answered": true,
+    "timestamp": "2026-04-23T22:58:04.480185"
+  },
+  {
+    "workspace_id": "ca098237",
+    "session_id": "592lnm6eu0g",
+    "question": "what parttenaire it working with",
+    "answer": "Think tank is working with various partners, but one of the mentioned partners is MATLAB, and also collaborations with companies like Libelium, Beckhoff, and other IoT-related companies.",
+    "sources_count": 4,
+    "answered": true,
+    "timestamp": "2026-04-23T22:58:27.548833"
   }
 ]

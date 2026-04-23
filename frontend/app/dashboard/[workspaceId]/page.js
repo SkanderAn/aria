@@ -103,10 +103,10 @@ export default function WorkspacePage() {
         body: JSON.stringify({ question: q, session_id: sessionId, workspace_id: workspaceId })
       });
       const data = await res.json();
-      setMessages(prev => [...prev, { role: "assistant", text: data.answer, sources: data.sources, id: Date.now() + 1 }]);
+      setMessages(prev => [...prev, { role: "assistant", text: data.answer, id: Date.now() + 1 }]);
       fetchAnalytics();
     } catch {
-      setMessages(prev => [...prev, { role: "assistant", text: "Error connecting to backend.", sources: [], id: Date.now() + 1 }]);
+      setMessages(prev => [...prev, { role: "assistant", text: "Error connecting to backend.", id: Date.now() + 1 }]);
     }
     setChatLoading(false);
   };
@@ -135,7 +135,6 @@ export default function WorkspacePage() {
         ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 2px; }
         .tab-btn { transition: all 0.2s; cursor: pointer; border: none; }
         .doc-row:hover { background: #0d1117 !important; }
-        .source-pill:hover { border-color: #334155 !important; }
         @keyframes pulse { 0%,100%{opacity:0.3;transform:scale(0.8)} 50%{opacity:1;transform:scale(1)} }
         @keyframes msgIn { from{opacity:0;transform:translateY(8px)} to{opacity:1;transform:translateY(0)} }
         .msg-in { animation: msgIn 0.3s ease forwards; }
@@ -244,7 +243,7 @@ export default function WorkspacePage() {
                 </div>
               )}
 
-              {/* ── MESSAGES — fixed unique keys ── */}
+              {/* ── MESSAGES — sources removed ── */}
               {messages.map((msg) => (
                 <div key={msg.id} className="msg-in" style={{ display: "flex", justifyContent: msg.role === "user" ? "flex-end" : "flex-start", gap: "8px" }}>
                   {msg.role === "assistant" && (
@@ -263,22 +262,6 @@ export default function WorkspacePage() {
                         {msg.text}
                       </p>
                     </div>
-                    {msg.role === "assistant" && msg.sources && msg.sources.length > 0 && (
-                      <div style={{ display: "flex", flexWrap: "wrap", gap: "5px", paddingLeft: "2px" }}>
-                        {msg.sources.slice(0, 3).map((s, si) => (
-                          <span key={`${msg.id}-source-${si}`} className="source-pill" style={{
-                            fontFamily: "'DM Mono',monospace", fontSize: "10px", color: "#475569",
-                            background: "#0a0a14", border: "1px solid #1e293b", padding: "3px 8px",
-                            borderRadius: "4px", display: "inline-flex", alignItems: "center",
-                            gap: "4px", cursor: "default", transition: "border-color 0.2s"
-                          }}>
-                            <span style={{ color: workspace.primary_color, fontSize: "9px" }}>↗</span>
-                            {s.filename.length > 28 ? s.filename.slice(0, 25) + "..." : s.filename}
-                            {s.page ? ` · p.${s.page}` : ""}
-                          </span>
-                        ))}
-                      </div>
-                    )}
                   </div>
                 </div>
               ))}

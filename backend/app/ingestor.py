@@ -2,14 +2,18 @@ import os
 import fitz
 import uuid
 import requests
+import urllib3
 from bs4 import BeautifulSoup
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import Chroma
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from app.models import DocumentInfo, DocumentListItem
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 CHROMA_PATH = "./chroma_db"
 EMBEDDING_MODEL = "all-MiniLM-L6-v2"
+
+
 
 # Initialize embeddings once — runs locally, no API key needed
 embeddings = HuggingFaceEmbeddings(
@@ -129,7 +133,7 @@ def ingest_url(url: str, workspace_id: str) -> DocumentInfo:
     }
 
     try:
-        response = requests.get(url, headers=headers, timeout=15)
+        response = requests.get(url, headers=headers, timeout=20, allow_redirects=True, verify=False)
         response.raise_for_status()
     except requests.exceptions.RequestException as e:
         raise ValueError(f"Could not fetch URL: {str(e)}")

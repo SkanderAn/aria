@@ -17,6 +17,9 @@ from app.ingestor import (
 )
 from app.retriever import chat, clear_history
 from app.analytics import log_conversation, get_overview
+from app.core.logger import get_logger
+
+logger = get_logger("main")
 
 app = FastAPI(
     title="Aria API",
@@ -32,9 +35,14 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+@app.on_event("startup")
+async def startup_event():
+    logger.info("Aria API starting up")
+
 # ─── Health ────────────────────────────────────────────────────
 @app.get("/")
 def root():
+    logger.debug("Root endpoint called")
     return {"message": "Aria API is running", "version": "1.0.0"}
 
 @app.get("/health")
@@ -45,11 +53,13 @@ def health():
 @app.post("/workspaces", response_model=WorkspaceResponse)
 def create_new_workspace(data: WorkspaceCreate):
     """Create a new workspace for a business."""
+    logger.info(f"Creating workspace: {data.name}")
     return create_workspace(data)
 
 @app.get("/workspaces", response_model=List[WorkspaceResponse])
 def get_all_workspaces():
     """List all workspaces."""
+    logger.debug("Listing all workspaces")
     return list_workspaces()
 
 @app.get("/workspaces/{workspace_id}", response_model=WorkspaceResponse)
@@ -57,12 +67,14 @@ def get_single_workspace(workspace_id: str):
     """Get a specific workspace."""
     workspace = get_workspace(workspace_id)
     if not workspace:
+        logger.warning(f"Workspace not found: {workspace_id}")
         raise HTTPException(status_code=404, detail="Workspace not found")
     return workspace
 
 @app.delete("/workspaces/{workspace_id}")
 def remove_workspace(workspace_id: str):
     """Delete a workspace."""
+    logger.info(f"Deleting workspace: {workspace_id}")
     success = delete_workspace(workspace_id)
     if not success:
         raise HTTPException(status_code=404, detail="Workspace not found")
@@ -78,13 +90,19 @@ async def upload_document(workspace_id: str, file: UploadFile = File(...)):
         raise HTTPException(status_code=404, detail="Workspace not found")
     if not file.filename.endswith(".pdf"):
         raise HTTPException(status_code=400, detail="Only PDF files are supported")
+    
+    logger.info(f"Uploading PDF '{file.filename}' to workspace {workspace_id}")
     try:
         contents = await file.read()
-        return ingest_pdf(contents, file.filename, workspace_id)
+        result = ingest_pdf(contents, file.filename, workspace_id)
+        logger.info(f"PDF ingested: {result.doc_id}, chunks={result.chunk_count}")
+        return result
     except ValueError as e:
+        logger.error(f"Ingestion error: {str(e)}")
         raise HTTPException(status_code=400, detail=str(e))
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        logger.exception(f"Unexpected error during PDF ingestion: {str(e)}")
+        raise HTTPException(status_code=500, detail="Internal server error")
 
 @app.post("/workspaces/{workspace_id}/documents/url",
           response_model=DocumentInfo)
@@ -96,12 +114,18 @@ def ingest_from_url(workspace_id: str, payload: dict):
     url = payload.get("url", "")
     if not url:
         raise HTTPException(status_code=400, detail="URL is required")
+    
+    logger.info(f"Ingesting URL '{url}' to workspace {workspace_id}")
     try:
-        return ingest_url(url, workspace_id)
+        result = ingest_url(url, workspace_id)
+        logger.info(f"URL ingested: {result.doc_id}, chunks={result.chunk_count}")
+        return result
     except ValueError as e:
+        logger.error(f"Ingestion error: {str(e)}")
         raise HTTPException(status_code=400, detail=str(e))
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        logger.exception(f"Unexpected error during URL ingestion: {str(e)}")
+        raise HTTPException(status_code=500, detail="Internal server error")
 
 @app.get("/workspaces/{workspace_id}/documents",
          response_model=List[DocumentListItem])
@@ -115,6 +139,7 @@ def list_workspace_documents(workspace_id: str):
 @app.delete("/workspaces/{workspace_id}/documents/{doc_id}")
 def remove_document(workspace_id: str, doc_id: str):
     """Delete a document from a workspace."""
+    logger.info(f"Deleting document {doc_id} from workspace {workspace_id}")
     success = delete_document(doc_id, workspace_id)
     if not success:
         raise HTTPException(status_code=404, detail="Document not found")
@@ -130,6 +155,8 @@ def chat_endpoint(request: ChatRequest):
     workspace = get_workspace(request.workspace_id)
     if not workspace:
         raise HTTPException(status_code=404, detail="Workspace not found")
+    
+    logger.info(f"Chat request: session={request.session_id}, workspace={request.workspace_id}")
     try:
         response = chat(
             question=request.question,
@@ -144,13 +171,16 @@ def chat_endpoint(request: ChatRequest):
             answer=response.answer,
             sources_count=len(response.sources)
         )
+        logger.info(f"Chat response sent: {len(response.answer)} chars, {len(response.sources)} sources")
         return response
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        logger.exception(f"Chat error: {str(e)}")
+        raise HTTPException(status_code=500, detail="Chat processing failed")
 
 @app.delete("/chat/{session_id}")
 def clear_chat_history(session_id: str):
     """Clear conversation history for a session."""
+    logger.info(f"Clearing chat history for session {session_id}")
     clear_history(session_id)
     return {"message": "Chat history cleared"}
 
