@@ -538,5 +538,122 @@
     "sources_count": 4,
     "answered": true,
     "timestamp": "2026-04-23T22:58:27.548833"
+  },
+  {
+    "workspace_id": "8ea98158",
+    "session_id": "k6fm4chvgp",
+    "question": "Hello",
+    "answer": "I'm having trouble processing your request right now. Please try again in a moment.",
+    "sources_count": 1,
+    "answered": true,
+    "timestamp": "2026-04-23T23:30:23.559203"
+  },
+  {
+    "workspace_id": "8ea98158",
+    "session_id": "k6fm4chvgp",
+    "question": "what is TT",
+    "answer": "I'm having trouble processing your request right now. Please try again in a moment.",
+    "sources_count": 1,
+    "answered": true,
+    "timestamp": "2026-04-23T23:30:32.383734"
+  },
+  {
+    "workspace_id": "8ea98158",
+    "session_id": "c2hv3xd9308",
+    "question": "hello",
+    "answer": "Hello. How can I assist you today?",
+    "sources_count": 1,
+    "answered": true,
+    "timestamp": "2026-04-23T23:35:34.908403"
+  },
+  {
+    "workspace_id": "8ea98158",
+    "session_id": "c2hv3xd9308",
+    "question": "so what is TT",
+    "answer": "Think tank (TT) appears to be a business solutions company that specializes in digital transformation, offering a range of services including software development, artificial intelligence solutions, and more. They seem to help businesses shape their digital future and achieve a leading market position.",
+    "sources_count": 1,
+    "answered": true,
+    "timestamp": "2026-04-23T23:35:42.801294"
+  },
+  {
+    "workspace_id": "8ea98158",
+    "session_id": "c2hv3xd9308",
+    "question": "and what are theyre partenaire",
+    "answer": "Think tank has partnered with several notable companies, including Audi AG and BMW. They have worked together on various projects, such as developing a central database application for Audi AG and creating a web application called \"Your Product Assistant\" for BMW. Additionally, they have also collaborated with the Tunisian public administration and the government of Madagascar on digital transformation initiatives.",
+    "sources_count": 1,
+    "answered": true,
+    "timestamp": "2026-04-23T23:36:03.575756"
+  },
+  {
+    "workspace_id": "8ea98158",
+    "session_id": "c2hv3xd9308",
+    "question": "how can i contact them",
+    "answer": "I don't have that information in my knowledge base. Please contact our support team for assistance.",
+    "sources_count": 1,
+    "answered": true,
+    "timestamp": "2026-04-23T23:36:23.738412"
+  },
+  {
+    "workspace_id": "8ea98158",
+    "session_id": "c2hv3xd9308",
+    "question": "any phone number or mail founded!",
+    "answer": "I don't have that information in my knowledge base. Please contact our support team for assistance.",
+    "sources_count": 1,
+    "answered": true,
+    "timestamp": "2026-04-23T23:36:43.961375"
+  },
+  {
+    "workspace_id": "3e71155d",
+    "session_id": "h1tw47q9pzj",
+    "question": "hello",
+    "answer": "Hello. How can I assist you today on Alibaba.com, the world's largest online B2B marketplace?",
+    "sources_count": 1,
+    "answered": true,
+    "timestamp": "2026-04-23T23:38:00.219988"
+  },
+  {
+    "workspace_id": "3e71155d",
+    "session_id": "h1tw47q9pzj",
+    "question": "there is iphones !",
+    "answer": "You're looking for iPhones. They are indeed available on Alibaba.com, along with other mobile phones, laptops, electric scooters, and more. Would you like to know more about a specific product or category?",
+    "sources_count": 1,
+    "answered": true,
+    "timestamp": "2026-04-23T23:38:03.807371"
+  },
+  {
+    "workspace_id": "3e71155d",
+    "session_id": "h1tw47q9pzj",
+    "question": "what is the price of iphone 17",
+    "answer": "I don't have that information in my knowledge base. Please contact our support team for assistance.",
+    "sources_count": 1,
+    "answered": true,
+    "timestamp": "2026-04-23T23:38:17.128740"
+  },
+  {
+    "workspace_id": "ca098237",
+    "session_id": "ao1hwve7p5",
+    "question": "do you know tt",
+    "answer": "I don't have that information in my knowledge base. Please contact our support team for assistance.",
+    "sources_count": 2,
+    "answered": true,
+    "timestamp": "2026-04-23T23:59:10.787882"
+  },
+  {
+    "workspace_id": "cb551ae4",
+    "session_id": "tabjngcta6h",
+    "question": "what is tt",
+    "answer": "TT refers to think tank, a company that provides business solutions and digital transformation services. They offer a range of services, including software development, artificial intelligence solutions, and digitalization expertise to help businesses stay ahead in the market.",
+    "sources_count": 1,
+    "answered": true,
+    "timestamp": "2026-04-24T00:00:30.085698"
+  },
+  {
+    "workspace_id": "4924161c",
+    "session_id": "ammxmbj4x5s",
+    "question": "Where can i find celio",
+    "answer": "You can find Celio stores in several locations in Tunisia, including:\n* Celio * La Soukra in Carrefour Les Jardins de Soukra\n* Celio * La Marsa in C.C. Le Zephir, Av\n* Celio * Mall of Sousse in Km 127 GP1, KALAA EL KEBIRA\n* Celio * Tunis City in C.C. Tunis City, Borj Touil-2081 Tunis\n* Celio * Tunis Club in Avenue Alain Savary\n* Celio * Mall of Sfax in Km 10, Route de Tunis, 3021 Sakiet Ezzit, Sfax\n\nPlease note that this list may not be exhaustive, and it's always a good idea to check for the most up-to-date information.",
+    "sources_count": 1,
+    "answered": true,
+    "timestamp": "2026-04-24T00:13:12.276814"
   }
 ]

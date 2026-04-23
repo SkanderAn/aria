@@ -1,22 +1,25 @@
 import logging
 import sys
-from app.core.config import settings
+from app.core.config import config
 
-def setup_logger(name: str) -> logging.Logger:
+def get_logger(name: str) -> logging.Logger:
+    """Get configured logger instance"""
     logger = logging.getLogger(name)
-    logger.setLevel(settings.LOG_LEVEL)
     
     if not logger.handlers:
-        handler = logging.StreamHandler(sys.stdout)
+        logger.setLevel(logging.INFO)
+        
+        # Console handler
+        console_handler = logging.StreamHandler(sys.stdout)
+        console_handler.setLevel(logging.INFO)
+        
+        # Formatter
         formatter = logging.Formatter(
-            fmt="%(asctime)s [%(levelname)s] %(name)s - %(message)s",
-            datefmt="%Y-%m-%d %H:%M:%S"
+            '%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+            datefmt='%Y-%m-%d %H:%M:%S'
         )
-        handler.setFormatter(formatter)
-        logger.addHandler(handler)
+        console_handler.setFormatter(formatter)
+        
+        logger.addHandler(console_handler)
     
     return logger
-
-# Factory function for module-specific loggers
-def get_logger(module_name: str) -> logging.Logger:
-    return setup_logger(f"aria.{module_name}")

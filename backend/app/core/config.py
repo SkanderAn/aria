@@ -1,37 +1,34 @@
-from pydantic_settings import BaseSettings
-from typing import List
+import os
+from dotenv import load_dotenv
 
-class Settings(BaseSettings):
-    # API
-    API_TITLE: str = "Aria API"
-    API_VERSION: str = "1.0.0"
-    API_DESCRIPTION: str = "AI Customer Support Platform — Train your agent in 5 minutes"
-    
-    # CORS
-    CORS_ORIGINS: List[str] = ["http://localhost:3000", "http://localhost:3001"]
-    
-    # LLM
-    GROQ_API_KEY: str
-    LLM_MODEL: str = "llama-3.3-70b-versatile"
-    LLM_TEMPERATURE: float = 0.3
-    
-    # Embeddings
-    EMBEDDING_MODEL: str = "all-MiniLM-L6-v2"
-    EMBEDDING_DEVICE: str = "cpu"
-    
-    # Vector Store
-    CHROMA_PERSIST_DIR: str = "./chroma_db"
-    
-    # Storage (JSON files for now)
-    WORKSPACES_FILE: str = "./workspaces.json"
-    ANALYTICS_FILE: str = "./analytics.json"
-    
-    # Logging
-    LOG_LEVEL: str = "INFO"
-    
-    class Config:
-        env_file = ".env"
-        env_file_encoding = "utf-8"
-        case_sensitive = True
+load_dotenv()
 
-settings = Settings()
+class Config:
+    # Groq API
+    GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+    
+    # Model configurations
+    EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "BAAI/bge-small-en-v1.5")
+    LLM_MODEL = os.getenv("LLM_MODEL", "llama3-70b-8192")
+    
+    # RAG Parameters
+    CHUNK_SIZE = int(os.getenv("CHUNK_SIZE", 800))
+    CHUNK_OVERLAP = int(os.getenv("CHUNK_OVERLAP", 150))
+    RETRIEVAL_K = int(os.getenv("RETRIEVAL_K", 6))
+    TEMPERATURE = float(os.getenv("TEMPERATURE", 0.2))
+    
+    # Reranking
+    USE_RERANKER = os.getenv("USE_RERANKER", "true").lower() == "true"
+    RERANKER_MODEL = os.getenv("RERANKER_MODEL", "cross-encoder/ms-marco-MiniLM-L-6-v2")
+    
+    # Cache
+    ENABLE_CACHE = os.getenv("ENABLE_CACHE", "true").lower() == "true"
+    CACHE_SIZE = int(os.getenv("CACHE_SIZE", 100))
+    
+    # ChromaDB
+    CHROMA_PATH = os.getenv("CHROMA_PATH", "./chroma_db")
+    
+    # Query Expansion
+    ENABLE_QUERY_EXPANSION = os.getenv("ENABLE_QUERY_EXPANSION", "true").lower() == "true"
+
+config = Config()
