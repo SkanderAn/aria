@@ -655,5 +655,68 @@
     "sources_count": 1,
     "answered": true,
     "timestamp": "2026-04-24T00:13:12.276814"
+  },
+  {
+    "workspace_id": "cb551ae4",
+    "session_id": "gd8skt3kya",
+    "question": "hello",
+    "answer": "Hello. How can I assist you today?",
+    "sources_count": 1,
+    "answered": true,
+    "timestamp": "2026-04-24T00:18:28.901724"
+  },
+  {
+    "workspace_id": "cb551ae4",
+    "session_id": "oxgmsg22un",
+    "question": "hello",
+    "answer": "Hello. How can I assist you today?",
+    "sources_count": 1,
+    "answered": true,
+    "timestamp": "2026-04-24T00:19:20.871894"
+  },
+  {
+    "workspace_id": "cb551ae4",
+    "session_id": "n5ismrmhim",
+    "question": "hello",
+    "answer": "Hello. How can I assist you today?",
+    "sources_count": 1,
+    "answered": true,
+    "timestamp": "2026-04-24T00:26:22.509484"
+  },
+  {
+    "workspace_id": "cb551ae4",
+    "session_id": "twe1hneeuc",
+    "question": "hello",
+    "answer": "Hello. How can I assist you today?",
+    "sources_count": 1,
+    "answered": true,
+    "timestamp": "2026-04-24T00:32:32.375201"
+  },
+  {
+    "workspace_id": "cb551ae4",
+    "session_id": "twe1hneeuc",
+    "question": "Is celio opened now !",
+    "answer": "I don't have that information in my knowledge base. Please contact our support team for assistance.",
+    "sources_count": 1,
+    "answered": true,
+    "timestamp": "2026-04-24T00:32:45.264753"
+  },
+  {
+    "workspace_id": "cb551ae4",
+    "session_id": "twe1hneeuc",
+    "question": "what is celio so !",
+    "answer": "I don't have any information about \"Celio\" in my knowledge base. It's possible that it could be a store, a brand, or something else, but I don't have any details about it. If you could provide more context, I'd be happy to try and help you further.",
+    "sources_count": 1,
+    "answered": true,
+    "timestamp": "2026-04-24T00:32:55.824140"
+  },
+  {
+    "workspace_id": "4924161c",
+    "session_id": "8hyoqxi5v6o",
+    "question": "is celio open now !",
+    "answer": "The current status of Celio stores varies by location. Some stores are listed as \"Ferm\u00e9\" (closed), but the hours of operation are provided. For example, celio * La Soukra is open from 10:00 to 21:00 on weekdays and 10:00 to 22:00 on Fridays and Saturdays. To confirm if a specific Celio store is open now, I would need to know the location.",
+    "sources_count": 2,
+    "answered": true,
+    "timestamp": "2026-04-24T00:33:51.389552"
   }
 ]

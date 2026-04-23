@@ -10,6 +10,9 @@ export default function Dashboard() {
   const [loading, setLoading] = useState(true);
   const [creating, setCreating] = useState(false);
   const [showForm, setShowForm] = useState(false);
+  const [showDeleteModal, setShowDeleteModal] = useState(false);
+  const [workspaceToDelete, setWorkspaceToDelete] = useState(null);
+  const [toast, setToast] = useState(null);
   const [form, setForm] = useState({
     name: "",
     business_name: "",
@@ -20,6 +23,11 @@ export default function Dashboard() {
 
   useEffect(() => { fetchWorkspaces(); }, []);
 
+  const showToast = (message, type = "success") => {
+    setToast({ message, type });
+    setTimeout(() => setToast(null), 3000);
+  };
+
   const fetchWorkspaces = async () => {
     try {
       const res = await fetch(`${API}/workspaces`);
@@ -27,6 +35,7 @@ export default function Dashboard() {
       setWorkspaces(data);
     } catch (e) {
       console.error("Failed to fetch workspaces", e);
+      showToast("Failed to fetch workspaces", "error");
     }
     setLoading(false);
   };
@@ -44,16 +53,99 @@ export default function Dashboard() {
       setWorkspaces(prev => [...prev, data]);
       setShowForm(false);
       setForm({ name: "", business_name: "", agent_name: "Aria", welcome_message: "Hello! How can I help you today?", primary_color: "#1A56DB" });
+      showToast(`Workspace "${data.name}" created successfully!`, "success");
     } catch (e) {
-      alert("Failed to create workspace");
+      showToast("Failed to create workspace", "error");
     }
     setCreating(false);
   };
 
-  const handleDelete = async (id) => {
-    if (!confirm("Delete this workspace?")) return;
-    await fetch(`${API}/workspaces/${id}`, { method: "DELETE" });
-    setWorkspaces(prev => prev.filter(w => w.workspace_id !== id));
+  const handleDeleteClick = (workspace) => {
+    setWorkspaceToDelete(workspace);
+    setShowDeleteModal(true);
+  };
+
+  const confirmDelete = async () => {
+    if (!workspaceToDelete) return;
+    try {
+      await fetch(`${API}/workspaces/${workspaceToDelete.workspace_id}`, { method: "DELETE" });
+      setWorkspaces(prev => prev.filter(w => w.workspace_id !== workspaceToDelete.workspace_id));
+      showToast(`Deleted "${workspaceToDelete.business_name}"`, "success");
+    } catch (error) {
+      showToast("Delete failed", "error");
+    }
+    setShowDeleteModal(false);
+    setWorkspaceToDelete(null);
+  };
+
+  // Delete Confirmation Modal Component
+  const DeleteModal = () => {
+    if (!showDeleteModal) return null;
+    
+    return (
+      <div style={{
+        position: "fixed",
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
+        background: "rgba(0,0,0,0.8)",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        zIndex: 1000,
+        backdropFilter: "blur(4px)"
+      }} onClick={() => setShowDeleteModal(false)}>
+        <div style={{
+          background: "#0a0a14",
+          border: "1px solid #1e293b",
+          borderRadius: "16px",
+          padding: "28px",
+          maxWidth: "400px",
+          width: "90%",
+          boxShadow: "0 20px 40px rgba(0,0,0,0.3)"
+        }} onClick={e => e.stopPropagation()}>
+          <div style={{ textAlign: "center", marginBottom: "16px" }}>
+            <span style={{ fontSize: "48px" }}>🗑️</span>
+          </div>
+          <h3 style={{ fontSize: "18px", color: "#f8fafc", marginBottom: "12px", textAlign: "center" }}>Delete Workspace?</h3>
+          <p style={{ fontSize: "14px", color: "#64748b", marginBottom: "8px", textAlign: "center" }}>
+            Are you sure you want to delete <strong style={{ color: "#f8fafc" }}>{workspaceToDelete?.business_name}</strong>?
+          </p>
+          <p style={{ fontSize: "12px", color: "#475569", marginBottom: "24px", textAlign: "center" }}>
+            This will permanently delete all documents and conversations.
+          </p>
+          <div style={{ display: "flex", gap: "12px", justifyContent: "center" }}>
+            <button onClick={() => setShowDeleteModal(false)}
+              style={{
+                background: "transparent",
+                border: "1px solid #1e293b",
+                borderRadius: "8px",
+                padding: "10px 24px",
+                color: "#64748b",
+                cursor: "pointer",
+                fontSize: "13px",
+                fontWeight: 500
+              }}>
+              Cancel
+            </button>
+            <button onClick={confirmDelete}
+              style={{
+                background: "#ef4444",
+                border: "none",
+                borderRadius: "8px",
+                padding: "10px 24px",
+                color: "white",
+                cursor: "pointer",
+                fontSize: "13px",
+                fontWeight: 500
+              }}>
+              Delete Forever
+            </button>
+          </div>
+        </div>
+      </div>
+    );
   };
 
   return (
@@ -65,8 +157,37 @@ export default function Dashboard() {
         .card:hover { border-color: #1A56DB55 !important; transform: translateY(-2px); }
         .btn-primary { transition: all 0.2s; }
         .btn-primary:hover { background: #1650c0 !important; }
-        .btn-danger:hover { color: #ef4444 !important; }
+        .toast {
+          position: fixed;
+          bottom: 20px;
+          left: 50%;
+          transform: translateX(-50%);
+          padding: 12px 24px;
+          border-radius: 8px;
+          font-size: 13px;
+          font-weight: 500;
+          z-index: 1001;
+          animation: slideUp 0.3s ease;
+          font-family: 'DM Sans', sans-serif;
+        }
+        @keyframes slideUp {
+          from { opacity: 0; transform: translateX(-50%) translateY(20px); }
+          to { opacity: 1; transform: translateX(-50%) translateY(0); }
+        }
       `}</style>
+
+      {/* Toast Notifications */}
+      {toast && (
+        <div className="toast" style={{
+          background: toast.type === "success" ? "#0ea572" : "#ef4444",
+          color: "white"
+        }}>
+          {toast.message}
+        </div>
+      )}
+
+      {/* Delete Confirmation Modal */}
+      <DeleteModal />
 
       {/* HEADER */}
       <header style={{ borderBottom: "1px solid #0f172a", padding: "0 32px", height: "60px", display: "flex", alignItems: "center", justifyContent: "space-between", position: "sticky", top: 0, background: "rgba(6,6,16,0.95)", backdropFilter: "blur(12px)", zIndex: 50 }}>
@@ -151,8 +272,10 @@ export default function Dashboard() {
                       {w.agent_name[0]}
                     </span>
                   </div>
-                  <button className="btn-danger" onClick={e => { e.stopPropagation(); handleDelete(w.workspace_id); }}
-                    style={{ background: "none", border: "none", cursor: "pointer", color: "#334155", fontSize: "16px", padding: "4px", transition: "color 0.2s" }}>
+                  <button onClick={e => { e.stopPropagation(); handleDeleteClick(w); }}
+                    style={{ background: "none", border: "none", cursor: "pointer", color: "#334155", fontSize: "20px", padding: "4px 8px", transition: "color 0.2s", borderRadius: "6px" }}
+                    onMouseEnter={e => { e.target.style.color = "#ef4444"; e.target.style.background = "#ef444410"; }}
+                    onMouseLeave={e => { e.target.style.color = "#334155"; e.target.style.background = "none"; }}>
                     ×
                   </button>
                 </div>
