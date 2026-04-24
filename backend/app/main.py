@@ -46,23 +46,25 @@ async def startup_event():
     os.makedirs("static", exist_ok=True)
 
 # ─── Health ────────────────────────────────────────────────────
+@app.get("/health")
+def health():
+    return {"status": "ok"}  # ⚠️ must NEVER fail
+
+@app.get("/ping")
+def ping():
+    return "pong"
+
 @app.get("/")
 def root():
-    logger.debug("Root endpoint called")
     return {
-        "message": "Aria API is running",
+        "message": "Aria API running",
         "version": "2.0.0",
         "config": {
-            "llm_model": config.LLM_MODEL,
-            "embedding_model": config.EMBEDDING_MODEL,
-            "chunk_size": config.CHUNK_SIZE,
-            "retrieval_k": config.RETRIEVAL_K
+            "llm_model": getattr(config, "LLM_MODEL", "unknown"),
+            "embedding_model": getattr(config, "EMBEDDING_MODEL", "unknown"),
         }
     }
 
-@app.get("/health")
-def health():
-    return {"status": "healthy", "version": "2.0.0"}
 
 # ─── Workspaces ────────────────────────────────────────────────
 @app.post("/workspaces", response_model=WorkspaceResponse)
