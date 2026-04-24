@@ -1,0 +1,7 @@
+echo [build] > railway.toml
+echo builder = "nixpacks" >> railway.toml
+echo. >> railway.toml
+echo [deploy] >> railway.toml
+echo startCommand = "uvicorn app.main:app --host 0.0.0.0 --port $PORT" >> railway.toml
+echo healthcheckPath = "/health" >> railway.toml
+echo restartPolicyType = "on_failure" >> railway.toml
